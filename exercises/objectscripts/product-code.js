@@ -6,7 +6,6 @@
 const partCode2 = "DI:12345-M";
 const partCode3 = "ACE:1-12"; */
 
-function getPartCode1(partCode) {}
 
 function getPartCode(partCode) {
   const positionOfColon = partCode.indexOf(":");
