@@ -55,7 +55,7 @@ for(let i=0; i<courses.length; i++) {
 // What are the titles of the courses that cost $50 or less?
 for(let i=0; i<courses.length; i++) {
     if(courses[i].Fee <= 50) {
-        console.log(courses[i].Title)
+        console.log("fee under 50"+courses[i].Title)
     }
 
     
@@ -65,6 +65,5 @@ for(let i=0; i<courses.length; i++) {
     if(courses[i].Location == "Classroom 1") {
         console.log(courses[i].Title)
     }
-
-   
+  
 }
