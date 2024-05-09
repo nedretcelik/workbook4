@@ -64,7 +64,7 @@ findNameStartsBob(academyMembers)
 // that starts with "A"
 
 
-function findNameStartsWithA(academyMembersArray) {
+/* function findNameStartsWithA(academyMembersArray) {
     let membersWithA = [];
     for(let i = 0; i < academyMembersArray.length; i++) {
         for(let j = 0; j < academyMembersArray[i].films.length; j++) {
@@ -75,5 +75,22 @@ function findNameStartsWithA(academyMembersArray) {
     }
     console.log(membersWithA)
 }
+findNameStartsWithA(academyMembers) */
 
-findNameStartsWithA(academyMembers)
+function findNameStartsWithA(academyMembersArray) {
+    let membersWithA = [];
+    for (const member of academyMembersArray) {
+        for (const film of member.films) {
+            if (film.startsWith("A")) {
+                membersWithA.push(member);
+            }
+        }
+    }
+    console.log(membersWithA);
+}
+findNameStartsWithA(academyMembers);
+
+
+
+
+
